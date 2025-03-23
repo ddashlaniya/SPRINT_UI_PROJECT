@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bill Payment</title>
+    <title>View Bills</title>
    <link rel="stylesheet" href="../css/view_bills.css">
 </head>
 <body>
@@ -31,12 +31,27 @@
             <!-- Rows will be added dynamically using JS -->
         </tbody>
     </table>
+    
+    <!-- Modal for Bill Details -->
+    <dialog id="billDialog" class="billDialog">
+       <div class="diloag">
+        <form method="dialog">
+            <h2 class="bill-info">Bill Information</h2>
+            <table id="modalBillDetails">
+                <!-- Bill details will be filled dynamically -->
+            </table>
+            <div class="button-dialog">
+                <button type="button" class="pages-btn" id="payButton">Pay</button>
+            </div>
+          </form>
+       </div>
+      </dialog>
    <div class="total">
     <div class="total-amount">Total Payable Amount: <span id="totalAmount">0</span></div>
     <button class="pages-btn pay-btn" onclick="proceedToPay()">Proceed to Pay</button>
    </div>
      
-    <script src="../js/view_bills.js">  
+     <script src="../js/view_bills.js">  
     </script>
 
   </div>
