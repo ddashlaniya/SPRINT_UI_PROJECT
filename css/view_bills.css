@@ -59,6 +59,33 @@ th {
     margin-left: 20px;
     cursor: pointer;
 }
-.bill-checkbox{
+
+input[type="checkbox"]{
+    accent-color: var(--primaryColor);
     cursor: pointer;
 }
+
+/* Bill Detail Modal */
+:modal {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+  .diloag{
+    padding: 10px;
+    width: 470px;
+  }
+  .button-dialog .pages-btn{
+   margin-left: 10px;
+   width: 95%;
+  }
+  .bill-info{
+   text-align: center;
+   margin-bottom: 10px;
+   color: white;
+   /* border:2px solid black; */
+   background-color: var(--primaryColor);
+   border-radius: 10%;
+  }
